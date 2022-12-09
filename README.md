@@ -52,19 +52,7 @@
 
 --------------------------------------Problemes rencontres--------------------------------------
 
--> Lorsque l'on creer un ois/ous cote server et client, il sont reliés par un header. Ainsi lorsque
-   l'on creer des nouveayx ois/ous d'un coté, il faut en creer des nouveaux de l'autre.
-       
-       => Les methodes setIn() et setOut() permettent d'avoir des ois/ous accessibles partout
-           dans la classe ClientChat sans avoir a en recreer
 
--> le chatArea occupe un grand espace mais le texte ne s'affiche pas partout...
-
--> Lors de la transition Jframe->JavaFX, je me suis rendu compte que la structure du projet devait changer:
-	
-	=> il faut creer un controller pour le client pour bien implementer JavaFX dans ce projet.
-	   J'ai trouvé cette solution en cherchant sur internet la structure d'un code en javaFX
-	   car je voyais JavaFX venait imposer beacoup de contraintes sur mon code...
 
 --------------------------------------Conclusion--------------------------------------
 
