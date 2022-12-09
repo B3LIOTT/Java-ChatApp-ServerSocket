@@ -6,6 +6,7 @@ I-Application sans interface graphique (uniquement dans le terminal...)
 
 1/
 -> creation des classes Server, Client et de ChatObject dans les grandes lignes
+   
     => les objets ChatObject permettent de recuperer plus de données qu'une simple
        chaine de caractere, comme une date d'envoi etc...
        ChatObjet implemente serializable pour pouvoir etre envoyé
@@ -16,6 +17,7 @@ I-Application sans interface graphique (uniquement dans le terminal...)
 
 2/
 -> approfondissement de la classe Server
+
     => creation d'une sous-classe "socketConnexion" qui defini chaque connexion
 
     => methode "sendChat" qui envoie le message et qui le diffuse a tous les utilisateurs
@@ -27,11 +29,11 @@ I-Application sans interface graphique (uniquement dans le terminal...)
 
 3/
 -> approfondissement de la classe Client
-    => methode arret():
+	
+	=> methode arret():
             -> lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
                au client et cet ordre appel la methode stop() qui va fermer le client
 
-    =>
 
 II-Application avec interface graphique
 
@@ -58,7 +60,8 @@ II-Application avec interface graphique
 
 -> Lorsque l'on creer un ois/ous cote server et client, il sont reliés par un header. Ainsi lorsque
    l'on creer des nouveayx ois/ous d'un coté, il faut en creer des nouveaux de l'autre.
-        => Les methodes setIn() et setOut() permettent d'avoir des ois/ous accessibles partout
+       
+       => Les methodes setIn() et setOut() permettent d'avoir des ois/ous accessibles partout
            dans la classe ClientChat sans avoir a en recreer
 
 -> le chatArea occupe un grand espace mais le texte ne s'affiche pas partout...
