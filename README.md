@@ -2,7 +2,7 @@
 
 
 
-## I-Application sans interface graphique (uniquement dans le terminal...)
+## I-Application sans interface graphique (uniquement dans le terminal)
 
 ### 1/ Creation des classes Server, Client et de ChatObject dans les grandes lignes
    
