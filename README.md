@@ -4,7 +4,7 @@
 
 I-Application sans interface graphique (uniquement dans le terminal...)
 
-1/
+#1/
 -> creation des classes Server, Client et de ChatObject dans les grandes lignes
    
     => les objets ChatObject permettent de recuperer plus de données qu'une simple
