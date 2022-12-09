@@ -4,8 +4,7 @@
 
 I-Application sans interface graphique (uniquement dans le terminal...)
 
-### 1/
--> creation des classes Server, Client et de ChatObject dans les grandes lignes
+### 1/ Creation des classes Server, Client et de ChatObject dans les grandes lignes
    
     => les objets ChatObject permettent de recuperer plus de données qu'une simple
        chaine de caractere, comme une date d'envoi etc...
@@ -15,8 +14,7 @@ I-Application sans interface graphique (uniquement dans le terminal...)
        connexion
 
 
-2/
--> approfondissement de la classe Server
+### 2/ Approfondissement de la classe Server
 
     => creation d'une sous-classe "socketConnexion" qui defini chaque connexion
 
@@ -27,8 +25,7 @@ I-Application sans interface graphique (uniquement dans le terminal...)
     => creation d'un ThreadGroup pour recuperer le nombre de connexions en temps réel avec la
        methode activeCount()
 
-3/
--> approfondissement de la classe Client
+### 3/ Approfondissement de la classe Client
 	
 	=> methode arret():
             -> lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
