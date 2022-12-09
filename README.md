@@ -38,9 +38,6 @@
 -> J'utilise Jframe pour creer l'interface de l'app, je me renseigne sur internet pour apprendre a utiliser
    Jframe
 
--> J'ai decouvert qu'il etait possible d'importer des icons pour le design de l'app, j'ai donc créé mes propres
-   icons/logo... sur after effect pour les importer dans mon projet et ameliorer son design
-
 
 ### 2/
 -> J'ai au des problemes d'affichage des bulles avec PaintComponent:
