@@ -2,7 +2,7 @@
 
 
 
-I-Application sans interface graphique (uniquement dans le terminal...)
+## I-Application sans interface graphique (uniquement dans le terminal...)
 
 ### 1/ Creation des classes Server, Client et de ChatObject dans les grandes lignes
    
@@ -32,9 +32,9 @@ I-Application sans interface graphique (uniquement dans le terminal...)
                au client et cet ordre appel la methode stop() qui va fermer le client
 
 
-II-Application avec interface graphique
+## II-Application avec interface graphique
 
-1/
+### 1/
 -> J'utilise Jframe pour creer l'interface de l'app, je me renseigne sur internet pour apprendre a utiliser
    Jframe
 
@@ -42,7 +42,7 @@ II-Application avec interface graphique
    icons/logo... sur after effect pour les importer dans mon projet et ameliorer son design
 
 
-2/
+### 2/
 -> J'ai au des problemes d'affichage des bulles avec PaintComponent:
 	=>les bulles qui s'affiche en dehors de le zone dédiée ne permettent pas d'agrandir le JPanel
 	  des chat, et donc le ScrollPane ne fonctionnait pas.
