@@ -52,10 +52,5 @@
 
 --------------------------------------Problemes rencontres--------------------------------------
 
-
-
---------------------------------------Conclusion--------------------------------------
-
-=> Ce projet m'a permis d'apprendre enormements de choses, notement comment structurer une application comportant une interface graphique, 
-   ce qui m'etait totalement inconnu.
+...
    
