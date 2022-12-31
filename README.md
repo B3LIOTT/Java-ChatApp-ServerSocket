@@ -24,6 +24,7 @@
 
 	=> creation d'un ThreadGroup pour recuperer le nombre de connexions en temps réel avec la
            methode activeCount()
+	   
 
 ### 3/ Approfondissement de la classe Client (Main.java)
 	
@@ -31,20 +32,13 @@
             -> 1ere version: lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
                au client et cet ordre appel la methode stop() qui va fermer le client
 	       
-	    -> 2eme version (finale): ensuite j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client,
-	       le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
-	       (en utilisant la methode isConnected() le server est informé de la deconnexion)
-
-	=> la classe Login.java permet au client de recevoir à travers une interface le pseudo de l'utilisateur
 
 ## II-Application avec interface graphique
 
-### 1/
+### 1/ JFrame
 	=> J'utilise Jframe pour creer l'interface de l'app, je me renseigne sur internet pour apprendre a utiliser
    	   Jframe
 
-
-### 2/
 	=> J'ai au des problemes d'affichage des bulles avec PaintComponent:
 		-> les bulles qui s'affiche en dehors de le zone dédiée ne permettent pas d'agrandir le JPanel
 	  	   des chat, et donc le ScrollPane ne fonctionnait pas.
@@ -54,7 +48,18 @@
 	=> Je suis passé sur NetBeans car IntelliJ me posait de nombreuses contraintes par rapport à NetBeans,
 	   NetBeans possède une interface de personnalisation java swing bien plus simple et maniable
 
+### 2/ Approfondissement
 
+	=> methode arret():
+	    -> 2eme version (finale): j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client,
+	       le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
+	       (en utilisant la methode isConnected() le server est informé de la deconnexion)
+
+	=> la classe Login.java permet au client de recevoir à travers une interface le pseudo de l'utilisateur:
+	    -> le pseudo voulu est envoyé au client qui le renvoie au server pour une verification
+	    -> le server verifie si le pseudo est valide et si il n'est pas déjà utilisé
+	    -> le client attend la validation du server et actualise ensuite son pseudo associé
+	
 --------------------------------------Problemes rencontres--------------------------------------
 
 ...
