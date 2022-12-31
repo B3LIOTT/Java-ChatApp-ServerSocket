@@ -14,7 +14,7 @@
            connexion
 
 
-### 2/ Approfondissement de la classe Server
+### 2/ Approfondissement de la classe Server (ServerChat.java)
 
 	=> creation d'une sous-classe "socketConnexion" qui defini chaque connexion
 
@@ -25,7 +25,7 @@
 	=> creation d'un ThreadGroup pour recuperer le nombre de connexions en temps réel avec la
            methode activeCount()
 
-### 3/ Approfondissement de la classe Client
+### 3/ Approfondissement de la classe Client (Main.java)
 	
 	=> methode arret():
             -> 1ere version: lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
@@ -35,6 +35,7 @@
 	       le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
 	       (en utilisant la methode isConnected() le server est informé de la deconnexion)
 
+	=> la classe Login.java permet au client de recevoir à travers une interface le pseudo de l'utilisateur
 
 ## II-Application avec interface graphique
 
