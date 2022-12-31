@@ -30,6 +30,8 @@
 	=> methode arret():
             -> lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
                au client et cet ordre appel la methode stop() qui va fermer le client
+	       
+	    -> ensuite j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client
 
 
 ## II-Application avec interface graphique
