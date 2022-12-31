@@ -69,5 +69,5 @@
 		-> le server verifie si le pseudo est valide et si il n'est pas déjà utilisé
 		-> le client attend la validation du server et actualise ensuite son pseudo associé
 	   
-	=> à chaque nouveau message (reçu ou envoyé) la bar de scroll est remise automatiquement en bas pour eviter de forcer 
+	=> à chaque nouveau message (reçu ou envoyé) la barre de scroll est remise automatiquement en bas pour eviter de forcer 
 	   l'utilisateur à suivre le fil de la discussion manuellement
