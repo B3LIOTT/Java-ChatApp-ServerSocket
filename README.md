@@ -64,7 +64,7 @@
 	           le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
 	           (en utilisant la methode isConnected() le server est informé de la deconnexion)
 
-	=> la classe Login.java permet au client de recevoir à travers une interface le pseudo de l'utilisateur:
+	=> la classe LoginPage.java permet au client de recevoir à travers une interface le pseudo de l'utilisateur:
 		-> le pseudo voulu est envoyé au client qui le renvoie au server pour une verification
 		-> le server verifie si le pseudo est valide et si il n'est pas déjà utilisé
 		-> le client attend la validation du server et actualise ensuite son pseudo associé
