@@ -59,8 +59,4 @@
 	    -> le pseudo voulu est envoyé au client qui le renvoie au server pour une verification
 	    -> le server verifie si le pseudo est valide et si il n'est pas déjà utilisé
 	    -> le client attend la validation du server et actualise ensuite son pseudo associé
-	
---------------------------------------Problemes rencontres--------------------------------------
 
-...
-   
