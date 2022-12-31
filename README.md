@@ -28,10 +28,12 @@
 ### 3/ Approfondissement de la classe Client
 	
 	=> methode arret():
-            -> lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
+            -> 1ere version: lorsque le client envoie au server "!exit", le serveur envoie un ordre de deconnexion
                au client et cet ordre appel la methode stop() qui va fermer le client
 	       
-	    -> ensuite j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client
+	    -> 2eme version (finale): ensuite j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client,
+	       le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
+	       (en utilisant la methode isConnected() le server est informé de la deconnexion)
 
 
 ## II-Application avec interface graphique
