@@ -36,6 +36,7 @@
 ## II-Application avec interface graphique
 
 ### 1/ JFrame
+
 	=> J'utilise Jframe pour creer l'interface de l'app, je me renseigne sur internet pour apprendre a utiliser
    	   Jframe
 
@@ -47,16 +48,25 @@
 
 	=> Je suis passé sur NetBeans car IntelliJ me posait de nombreuses contraintes par rapport à NetBeans,
 	   NetBeans possède une interface de personnalisation java swing bien plus simple et maniable
-
+	
+	=> Mise en place d'une interface graphique:
+		-> textfield pour ecrire le message
+		-> bouton personnalisé pour divers usages
+		-> la classe Chat.java dessine les bulles de chat
+		-> les classes (item_send et item_recep).java definissent les bulles + le pseudo + l'heure d'envoi
+		   en fonction d'un envoi ou d'une reception (variation de couleur et de position)
+		-> 
+	
 ### 2/ Approfondissement
 
 	=> methode arret():
-	    -> 2eme version (finale): j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client,
-	       le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
-	       (en utilisant la methode isConnected() le server est informé de la deconnexion)
+		-> 2eme version (finale): j'ai préféré remplacer le "!exit" par un bouton qui permet de fermer le client,
+	           le server se charge de supprimer le socket du client qui s'est deconnecté de sa liste de sockets
+	           (en utilisant la methode isConnected() le server est informé de la deconnexion)
 
 	=> la classe Login.java permet au client de recevoir à travers une interface le pseudo de l'utilisateur:
-	    -> le pseudo voulu est envoyé au client qui le renvoie au server pour une verification
-	    -> le server verifie si le pseudo est valide et si il n'est pas déjà utilisé
-	    -> le client attend la validation du server et actualise ensuite son pseudo associé
+		-> le pseudo voulu est envoyé au client qui le renvoie au server pour une verification
+		-> le server verifie si le pseudo est valide et si il n'est pas déjà utilisé
+		-> le client attend la validation du server et actualise ensuite son pseudo associé
+	   
 
