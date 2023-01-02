@@ -353,8 +353,11 @@ public class Main extends javax.swing.JFrame implements Runnable {
                         ok = true;
                         log.dispose();
                     }
+                    else if((currentChat.getMessage()).contains("pris")) {
+                        JOptionPane.showMessageDialog(log, currentChat.getMessage());
+                    }
                     else {
-                        JOptionPane.showMessageDialog(log, "Ce pseudo est deja pris");
+                        JOptionPane.showMessageDialog(log, currentChat.getMessage());
                     }
                 }
                 Thread.sleep(100);
