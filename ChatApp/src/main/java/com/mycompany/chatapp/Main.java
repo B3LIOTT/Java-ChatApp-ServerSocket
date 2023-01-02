@@ -347,7 +347,6 @@ public class Main extends javax.swing.JFrame implements Runnable {
                     
                     //reception de la demande/validation de pseudo du server:
                     responseServer = (ObjectChat) in.readObject();
-                    responseServerArea.setText(responseServer.getMessage());
                     setCurrentChat(responseServer);
                     if((currentChat.getMessage()).contains("Bienvenue")) {
                         ok = true;
