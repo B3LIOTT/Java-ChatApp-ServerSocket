@@ -119,16 +119,18 @@ public class ServerChat implements Runnable {
                             sendChat(wrongPseudo);
                         }
                         
-                        for (String ps : connexionMap.keySet()) {//test si le pseudo est deja pris:
-                            if (Objects.equals(ps, pseudo)) {
-                                sendChat(alrdyTaken);
-                                break;
+                        else {
+                            for (String ps : connexionMap.keySet()) {//test si le pseudo est deja pris:
+                                if (Objects.equals(ps, pseudo)) {
+                                    sendChat(alrdyTaken);
+                                    break;
+                                }
+                                else count++;
                             }
-                            else count++;
-                        }
-                        if (count == connexionMap.size()) {
-                            userPseudo = pseudo;
-                            ok = true;
+                            if (count == connexionMap.size()) {
+                                userPseudo = pseudo;
+                                ok = true;
+                            }
                         }
                     }
                 }//le pseudo est maintenant bon
