@@ -63,7 +63,7 @@ public class ServerChat implements Runnable {
                 socketConnexion socketClient = new socketConnexion(client);
                 new Thread(connexionGroup, socketClient).start();
 
-                //affichage du nombre des connexions (a changer)
+                //affichage du nombre des connexions dans le terminal
                 nbConnexions = connexionGroup.activeCount();
                 System.out.println("Nombre de clients connectes: "+ nbConnexions);
 
